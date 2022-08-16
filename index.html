@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">   
+    <title>Tortas de Autor - Manantiales Cakes</title>  	 
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  </head>
+  <body>
+ <header class="intro">
+ </header>
+ <main>
+   <header class="header">
+  <div class="container header__top">
+    <div class="header__logo">
+      <h1 class="header__title">
+        <img src="./img/logo.jpg" class="logo" alt="">Manantiales Cakes        
+      </h1>
+      
+    </div>
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+</svg> Carrito</button>
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Foto</th>
+                  <th>Torta</th>
+                  <th>Precio</th>                
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Vaciar Carrito</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="arrow"><svg width="24" height="24" viewBox="0 0 24 24">
+  <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"></path>
+</svg></div>
+</header>
+<main class="container page-content"> 
+  <div class="grid" id="grid">
+    <div class="card">
+      <img src="./img/img1.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Box Dulce Especial</h4>
+        <p class="card__price">$2500</p>
+        <button class="card__btn add-to-cart" data-id="6">Comprar</button>
+      </div>
+    </div>    
+    <div class="card">
+      <img src="./img/img2.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Pavlova Frutos Rojos</h4>     
+        <p class="card__price">$2100</p>
+        <button class="card__btn add-to-cart" data-id="7">Comprar</button>
+      </div>
+    </div>   
+    <div class="card">
+      <img src="./img/img3.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Candy Cake</h4>       
+        <p class="card__price">$2150</p>
+        <button class="card__btn add-to-cart" data-id="8">Comprar</button>
+      </div>
+    </div>   
+    <div class="card">
+      <img src="./img/img4.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Chocolate Cake</h4>       
+        <p class="card__price">$2550</p>
+        <button class="card__btn add-to-cart" data-id="9">Comprar</button>
+      </div>
+    </div>  
+    <div class="card">
+      <img src="./img/img5.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Berry Cake</h4>      
+        <p class="card__price">$2600</p>
+        <button class="card__btn add-to-cart" data-id="10">Comprar</button>
+      </div>
+    </div>  
+    <div class="card">
+      <img src="./img/img6.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Manantiales Cake</h4>      
+        <p class="card__price">$2300</p>
+        <button class="card__btn add-to-cart" data-id="11">Comprar</button>
+      </div>
+    </div> 
+    <div class="card">
+      <img src="./img/img8.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Bombón Cake</h4>     
+        <p class="card__price">$2800</p>
+        <button class="card__btn add-to-cart" data-id="12">Comprar</button>
+      </div>
+    </div>      
+  </div>
+</main>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script  src="./js/script.js"></script>
+  </body>
+</html>
